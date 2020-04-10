@@ -110,7 +110,7 @@ Y = tf.keras.utils.to_categorical(Y, 2)
 
 def plot_image(img_num):
     
-    file_name = dataset['file_name'][img_num]
+    file_name = dataset_correct['file_name'][img_num]
     img_name = re.sub('D:/ML final project/PS_Battles/dataset/', '', file_name)
     
     plt.imshow(X[img_num], interpolation='nearest')
